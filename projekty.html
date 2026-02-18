@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekty | GreenTech Solutions</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="img/logo.png" alt="GreenTech Logo" class="logo">
+                <span class="site-title">GreenTech <span>Solutions</span></span>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a href="o-nas.html">O nás</a></li>
+                    <li><a href="sluzby.html">Služby</a></li>
+                    <li><a href="projekty.html">Projekty</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <section class="content-section">
+        <h2>Naše realizácie</h2>
+        
+        <div class="gallery">
+            <div class="gallery-item" onclick="openModal('modal-p1')">
+                <img src="img/projekt1.jpg" alt="Solárny park">
+                <p class="project-name">Solárny park - Bratislava</p>
+            </div>
+
+            <div class="gallery-item" onclick="openModal('modal-p2')">
+                <img src="img/projekt2.jpg" alt="Veterná turbína">
+                <p class="project-name">Veterná turbína - Malacky</p>
+            </div>
+
+            <div class="gallery-item" onclick="openModal('modal-p3')">
+                <img src="img/projekt3.jpg" alt="Priemyselný audit">
+                <p class="project-name">Priemyselný audit - Žilina</p>
+            </div>
+        </div>
+
+        <div id="modal-p1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-p1')">&times;</span>
+                <h3>Solárny park - Bratislava</h3>
+                <img src="img/projekt1.jpg" class="modal-img" alt="Solárny park">
+                <p class="modal-text">Kompletná inštalácia 150 fotovoltických panelov pre priemyselný areál. Tento projekt zabezpečuje energetickú sebestačnosť objektu a výrazne znižuje prevádzkové náklady.</p>
+            </div>
+        </div>
+
+        <div id="modal-p2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-p2')">&times;</span>
+                <h3>Veterná turbína - Malacky</h3>
+                <img src="img/projekt2.jpg" class="modal-img" alt="Veterná turbína">
+                <p class="modal-text">Osadenie dvoch moderných mikroturbín pre miestnu ekofarmu. Turbíny sú navrhnuté tak, aby vyrábali energiu aj pri nízkej rýchlosti vetra.</p>
+            </div>
+        </div>
+
+        <div id="modal-p3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-p3')">&times;</span>
+                <h3>Priemyselný audit - Žilina</h3>
+                <img src="img/projekt3.jpg" class="modal-img" alt="Priemyselný audit">
+                <p class="modal-text">Detailná analýza energetických strát vo výrobnej hale. Na základe auditu boli implementované riešenia, ktoré ušetrili 25% nákladov ročne.</p>
+            </div>
+        </div>
+    </section>
+</main>
+    <footer><p>&copy; 2026 GreenTech Solutions. Všetky práva vyhradené.</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
